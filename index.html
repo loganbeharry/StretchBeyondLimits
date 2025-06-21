@@ -483,6 +483,25 @@
                 });
             });
         });
+// Auto-rotate Gallery
+const carousel = document.querySelector('.carousel-inner');
+let scrollPosition = 0;
+
+setInterval(() => {
+    if (!carousel) return;
+
+    scrollPosition += carousel.offsetWidth / 1.2;
+
+    if (scrollPosition >= carousel.scrollWidth - carousel.offsetWidth) {
+        scrollPosition = 0;
+    }
+
+    carousel.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+    });
+}, 3000); // rotates every 3 seconds
+
     </script>
 </body>
 </html>
