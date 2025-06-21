@@ -139,10 +139,12 @@
 <h2 class="text-3xl font-bold text-center mb-8">Gallery</h2>
 <div class="carousel relative overflow-hidden w-full max-w-4xl mx-auto">
 <div class="carousel-inner whitespace-nowrap overflow-x-auto scrollbar-hide">
-<img alt="Performance 1" class="inline-block w-full max-w-sm mx-2 rounded shadow" src="Ella_1.JPG"/>
-<img alt="Performance 2" class="inline-block w-full max-w-sm mx-2 rounded shadow" src="Ella_2.jpeg"/>
-<img alt="Performance 3" class="inline-block w-full max-w-sm mx-2 rounded shadow" src="Ella_3.jpeg"/>
-<img alt="Performance 4" class="inline-block w-full max-w-sm mx-2 rounded shadow" src="Ella_4.JPEG"/>
+        
+<img alt="Performance 1" class="inline-block w-full max-w-lg md:max-w-xl mx-4 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105" src="Ella_1.JPG"/>
+<img alt="Performance 2" class="inline-block w-full max-w-lg md:max-w-xl mx-4 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105" src="Ella_2.jpeg"/>
+<img alt="Performance 3" class="inline-block w-full max-w-lg md:max-w-xl mx-4 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105" src="Ella_3.jpeg"/>
+<img alt="Performance 4" class="inline-block w-full max-w-lg md:max-w-xl mx-4 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105" src="Ella_4.JPEG"/>
+        
 </div>
 </div>
 </div>
@@ -485,23 +487,21 @@
         });
 // Auto-rotate Gallery
 const carousel = document.querySelector('.carousel-inner');
-let scrollPosition = 0;
+let scrollAmount = 0;
 
 setInterval(() => {
     if (!carousel) return;
 
-    scrollPosition += carousel.offsetWidth / 1.2;
+    const scrollStep = carousel.offsetWidth * 0.9; // smoother pacing
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
-    if (scrollPosition >= carousel.scrollWidth - carousel.offsetWidth) {
-        scrollPosition = 0;
-    }
+    scrollAmount = (scrollAmount + scrollStep > maxScroll) ? 0 : scrollAmount + scrollStep;
 
     carousel.scrollTo({
-        left: scrollPosition,
+        left: scrollAmount,
         behavior: 'smooth'
     });
-}, 3000); // rotates every 3 seconds
-
+}, 3000);
     </script>
 </body>
 </html>
