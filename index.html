@@ -51,6 +51,9 @@
         .tab-content.active {
             display: block;
         }
+        .carousel-inner {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -228,25 +231,25 @@
 <img alt="Logan Beharry" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Logan Beharry</h3>
 <p class="text-sm leading-6 text-[#A96E7A]">Founder &amp; Chief Science Officer</p>
-<p class="text-xs mt-2 text-gray-500">A Caltech developmental biology researcher with EDS, Logan provides the scientific vision for the foundation.</p>
+<p class="text-xs mt-2 text-gray-500">As a researcher in developmental biology at the California Institute of Technology, and personally affected by Ehlers-Danlos Syndromes, Logan provides the foundational scientific vision and strategic direction for our research initiatives.</p>
 </div>
 <div class="text-center">
 <img alt="Tabiha Tate" class="mx-auto h-32 w-32 rounded-full object-cover" src="Tabitha-Boulding6152.jpg"/>
 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Tabiha Tate</h3>
 <p class="text-sm leading-6 text-[#A96E7A]">Director of Studio &amp; Community Outreach</p>
-<p class="text-xs mt-2 text-gray-500">Owner of the TATE Academy, Tabiha brings invaluable insight into the competitive dance world.</p>
+<p class="text-xs mt-2 text-gray-500">As the proprietor of the TATE Academy, Tabiha Tate contributes indispensable expertise and insight from the competitive dance industry, ensuring our programs are relevant and impactful for the community we serve.</p>
 </div>
 <div class="text-center">
 <img alt="Dr. Leobevitch" class="mx-auto h-32 w-32 rounded-full object-cover" src="Steve-Lebovitch-Headshot-Final.jpg"/>
 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Dr. S. Leobevitch</h3>
 <p class="text-sm leading-6 text-[#A96E7A]">Medical Director</p>
-<p class="text-xs mt-2 text-gray-500">A distinguished physician at Weill Cornell Medicine, Dr. Leobevitch oversees our medical network and programs.</p>
+<p class="text-xs mt-2 text-gray-500">Dr. S. Leobevitch, a distinguished physician affiliated with Weill Cornell Medicine, serves as our Medical Director. He is responsible for the oversight of our medical programs and the development of our national network of vetted healthcare professionals.</p>
 </div>
 <div class="text-center">
 <img alt="Stacy Beharry" class="mx-auto h-32 w-32 rounded-full object-cover" src="stacy_beharry_headshot.jpeg"/>
 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Stacy Beharry, Ed.D.</h3>
 <p class="text-sm leading-6 text-[#A96E7A]">Director of Education</p>
-<p class="text-xs mt-2 text-gray-500">With a background in curriculum development at USC, Stacy spearheads our educational initiatives.</p>
+<p class="text-xs mt-2 text-gray-500">Leveraging an extensive background in curriculum development from the University of Southern California, Stacy Beharry, Ed.D., leads the conceptualization and implementation of our educational initiatives, including our 'Safe Stretching & Hypermobility' curriculum.</p>
 </div>
 </div>
 </div>
@@ -298,7 +301,7 @@
 <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Join Our Mission</h2>
 <p class="mt-4 text-lg text-rose-100">The dancers in our community are hurting, and we have a clear, actionable plan to help them. We are seeking partners who share our vision and are ready to make a tangible difference. Let's work together to ensure every dancer can stretch beyond their limits, not be defined by them.</p>
 <div class="mt-10 flex items-center justify-center gap-x-6">
-<a class="rounded-md bg-white px-4 py-3 text-sm font-semibold text-[#A96E7A] shadow-sm hover:bg-rose-50 transition" href="mailto:partnerships@stretchbeyond.org?subject=Partnership Inquiry">Become a Foundational Partner</a>
+<a class="rounded-md bg-[#7C3AED] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#6A28D9] transition" href="#contact">Become a Partner</a>
 <a class="text-sm font-semibold leading-6 text-white" href="mailto:info@stretchbeyond.org?subject=Learning More">Contact Us <span aria-hidden="true">→</span></a>
 </div>
 </div>
@@ -465,6 +468,21 @@
                     });
                 });
             });
+
+            // Auto-rotating gallery
+            const carousel = document.querySelector('.carousel-inner');
+            const images = document.querySelectorAll('.carousel-inner img');
+            if (carousel && images.length > 0) {
+                let currentIndex = 0;
+                const totalImages = images.length;
+                const imageWidth = images[0].clientWidth + 16; // image width + margin mx-2 (which is 0.5rem * 2 = 16px)
+
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % totalImages;
+                    const scrollAmount = images[currentIndex].offsetLeft - carousel.offsetLeft;
+                    carousel.scrollLeft = scrollAmount;
+                }, 4000); // Change image every 4 seconds
+            }
         });
     </script>
 </body>
