@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html class="scroll-smooth" lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Stretch Beyond Limits Foundation | Proposal
   </title>
-  <!-- Chosen Palette: Soft Elegance -->
-  <!-- Application Structure Plan: A top-down narrative SPA guiding users from the problem to the solution and call to action. It uses a sticky navigation bar for easy access to key sections: The Problem, Our Vision, Our Strategy, Leadership, Partnership, and a final Call to Action. This structure logically presents the proposal's information, starting with the "why" (the problem), then the "what" (the solution & programs), the "who" (the team), and finally the "how" (the partnership & ask). Interactive charts and cards are used to make dense information like statistics and program details digestible and engaging, encouraging user exploration. -->
-  <!-- Visualization & Content Choices: 1. GJH Prevalence Comparison: Report Info -> GJH rates in dancers vs. general public. Goal -> Compare. Viz -> Bar Chart (Chart.js). Interaction -> Hover for details. Justification -> Clearly visualizes the disparity. 2. Key Stats: Report Info -> Market size, number of dancers. Goal -> Inform. Viz -> Animated Stat Cards (HTML/CSS/JS). Interaction -> Numbers count up on scroll. Justification -> High-impact delivery of key metrics. 3. Three Pillars Program: Report Info -> Details on Research, Education, Community Services. Goal -> Organize. Viz -> Interactive Tabbed Cards (HTML/CSS/JS). Interaction -> Click to reveal details. Justification -> Prevents a wall of text, allows user-driven exploration. -->
-  <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js">
-  </script>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-  <style>
+<!-- Chosen Palette: Soft Elegance -->
+<!-- Application Structure Plan: A top-down narrative SPA guiding users from the problem to the solution and call to action. It uses a sticky navigation bar for easy access to key sections: The Problem, Our Vision, Our Strategy, Leadership, Partnership, and a final Call to Action. This structure logically presents the proposal's information, starting with the "why" (the problem), then the "what" (the solution & programs), the "who" (the team), and finally the "how" (the partnership & ask). Interactive charts and cards are used to make dense information like statistics and program details digestible and engaging, encouraging user exploration. -->
+<!-- Visualization & Content Choices: 1. GJH Prevalence Comparison: Report Info -> GJH rates in dancers vs. general public. Goal -> Compare. Viz -> Bar Chart (Chart.js). Interaction -> Hover for details. Justification -> Clearly visualizes the disparity. 2. Key Stats: Report Info -> Market size, number of dancers. Goal -> Inform. Viz -> Animated Stat Cards (HTML/CSS/JS). Interaction -> Numbers count up on scroll. Justification -> High-impact delivery of key metrics. 3. Three Pillars Program: Report Info -> Details on Research, Education, Community Services. Goal -> Organize. Viz -> Interactive Tabbed Cards (HTML/CSS/JS). Interaction -> Click to reveal details. Justification -> Prevents a wall of text, allows user-driven exploration. -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<script src="https://cdn.tailwindcss.com">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js">
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
    body {
             font-family: 'Inter', sans-serif;
             background-color: #F8F7F4;
@@ -59,432 +60,333 @@
             display: block;
         }
   </style>
- </head>
- <body class="antialiased">
-  <!-- Header & Navigation -->
-  <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm" id="header">
-   <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-     <div class="flex-shrink-0">
-      <a class="text-xl font-bold tracking-tight" href="#hero">
+</head>
+<body class="antialiased">
+<!-- Header & Navigation -->
+<header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm" id="header">
+<nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex-shrink-0">
+<a class="text-xl font-bold tracking-tight" href="#hero">
        Stretch
        <span class="text-[#A96E7A]">
         Beyond
        </span>
        Limits
       </a>
-     </div>
-     <div class="hidden md:block">
-      <div class="ml-10 flex items-baseline space-x-4">
-       <a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#problem">
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-4">
+<a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#problem">
         The Problem
        </a>
-       <a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#solution">
+<a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#solution">
         Our Strategy
        </a>
-       <a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#leadership">
+<a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#leadership">
         Leadership
        </a>
-       <a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#partner">
+<a class="nav-link px-3 py-2 rounded-md text-sm font-medium" href="#partner">
         Partner With Us
        </a>
-       <a class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#A96E7A] hover:bg-[#935c69] transition" href="#contact">
+<a class="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#A96E7A] hover:bg-[#935c69] transition" href="#contact">
         Get Involved
        </a>
-      </div>
-     </div>
-     <div class="-mr-2 flex md:hidden">
-      <button class="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A96E7A]" id="mobile-menu-button" type="button">
-       <span class="sr-only">
+</div>
+</div>
+<div class="-mr-2 flex md:hidden">
+<button class="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A96E7A]" id="mobile-menu-button" type="button">
+<span class="sr-only">
         Open main menu
        </span>
-       <svg aria-hidden="true" class="block h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        </path>
-       </svg>
-       <svg aria-hidden="true" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        </path>
-       </svg>
-      </button>
-     </div>
-    </div>
-   </nav>
-   <div class="md:hidden hidden" id="mobile-menu">
-    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-     <a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#problem">
+<svg aria-hidden="true" class="block h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+<svg aria-hidden="true" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</button>
+</div>
+</div>
+</nav>
+<div class="md:hidden hidden" id="mobile-menu">
+<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+<a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#problem">
       The Problem
      </a>
-     <a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#solution">
+<a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#solution">
       Our Strategy
      </a>
-     <a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#leadership">
+<a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#leadership">
       Leadership
      </a>
-     <a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#partner">
+<a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#partner">
       Partner With Us
      </a>
-     <a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#contact">
+<a class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium" href="#contact">
       Get Involved
      </a>
-    </div>
-   </div>
-  </header>
-  <main>
-   <!-- Hero Section -->
-   <section class="relative pt-16 pb-24 sm:pt-24 sm:pb-32" id="hero">
-    <div class="absolute inset-0 overflow-hidden">
-     <img alt="Elegant ballet dancers in motion" class="w-full h-full object-cover object-center opacity-20" src="https://images.unsplash.com/photo-1574868713284-635b253351d3?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
-    </div>
-    <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="max-w-2xl mx-auto text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 sm:pt-24 sm:pb-32" id="hero">
+<div class="absolute inset-0 overflow-hidden">
+<img alt="Elegant ballet dancers in motion" class="w-full h-full object-cover object-center opacity-20" src="https://images.unsplash.com/photo-1574868713284-635b253351d3?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
+</div>
+<div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl mx-auto text-center">
+<h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
        Transforming Passion Into Healthy Practice
       </h1>
-      <p class="mt-6 text-lg leading-8 text-gray-700">
+<p class="mt-6 text-lg leading-8 text-gray-700">
        A proposal for The Ehlers-Danlos &amp; Joint Hypermobility Foundation, dedicated to creating a safer future for dancers through science, education, and community.
       </p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-       <a class="rounded-md bg-[#A96E7A] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#935c69] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition" href="#contact">
+<div class="mt-10 flex items-center justify-center gap-x-6">
+<a class="rounded-md bg-[#A96E7A] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#935c69] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition" href="#contact">
         Become a Partner
        </a>
-       <a class="text-sm font-semibold leading-6 text-gray-900" href="#problem">
+<a class="text-sm font-semibold leading-6 text-gray-900" href="#problem">
         Learn more
         <span aria-hidden="true">
          →
         </span>
-       </a>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- The Problem Section -->
-   <section class="bg-white py-20 sm:py-28" id="problem">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- The Problem Section -->
+<section class="bg-white py-20 sm:py-28" id="problem">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
        The Unseen Epidemic in Dance
       </h2>
-      <p class="mt-4 text-lg text-gray-600">
+<p class="mt-4 text-lg text-gray-600">
        In the demanding world of elite dance, what appears as an aesthetic advantage—extraordinary flexibility—is often the manifestation of a systemic medical condition. This creates a dangerous paradox where the gift of flexibility becomes a liability, leading to chronic injury and shortened careers.
       </p>
-     </div>
-     <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <div class="text-center md:text-left">
-       <h3 class="text-2xl font-bold text-gray-900">
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="text-center md:text-left">
+<h3 class="text-2xl font-bold text-gray-900">
         A Staggering Disparity
        </h3>
-       <p class="mt-2 text-base text-gray-600">
+<p class="mt-2 text-base text-gray-600">
         The prevalence of Generalized Joint Hypermobility (GJH) and related connective tissue disorders like Ehlers-Danlos Syndromes (EDS) in the dance community is alarming. The very trait selected for success is a primary risk factor for injury.
        </p>
-       <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 text-center">
-        <div class="p-4 bg-rose-50 rounded-lg">
-         <div class="stat-number text-4xl font-bold text-[#A96E7A]" data-target="90">
+<div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 text-center">
+<div class="p-4 bg-rose-50 rounded-lg">
+<div class="stat-number text-4xl font-bold text-[#A96E7A]" data-target="90">
           0
          </div>
-         <p class="mt-1 text-sm font-medium text-gray-600">
+<p class="mt-1 text-sm font-medium text-gray-600">
           Prevalence of GJH in professional ballet dancers (%)
          </p>
-        </div>
-        <div class="p-4 bg-rose-50 rounded-lg">
-         <div class="stat-number text-4xl font-bold text-[#A96E7A]" data-target="11">
+</div>
+<div class="p-4 bg-rose-50 rounded-lg">
+<div class="stat-number text-4xl font-bold text-[#A96E7A]" data-target="11">
           0
          </div>
-         <p class="mt-1 text-sm font-medium text-gray-600">
+<p class="mt-1 text-sm font-medium text-gray-600">
           Times More Likely to be Hypermobile than the public
          </p>
-        </div>
-       </div>
-      </div>
-      <div>
-       <div class="chart-container">
-        <canvas id="prevalenceChart">
-        </canvas>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Solution & Strategy Section -->
-   <section class="py-20 sm:py-28" id="solution">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-       A Strategy for a Healthier Future
-      </h2>
-      <p class="mt-4 text-lg text-gray-600">
-       Stretch Beyond Limits stands at the intersection of science, medicine, and the arts. Our mission is to promote inclusion, accessibility, and awareness for hypermobile dancers through evidence-based programs built on three core pillars.
-      </p>
-     </div>
-     <div class="mt-16">
-      <div class="flex justify-center border-b border-gray-300">
-       <button class="tab-button active py-4 px-6 block hover:text-[#A96E7A] focus:outline-none font-medium" data-tab="research">
-        🔬 Research
-       </button>
-       <button class="tab-button py-4 px-6 block hover:text-[#A96E7A] focus:outline-none font-medium" data-tab="education">
-        🎓 Education
-       </button>
-       <button class="tab-button py-4 px-6 block hover:text-[#A96E7A] focus:outline-none font-medium" data-tab="community">
-        🤝 Community
-       </button>
-      </div>
-      <div class="mt-8 max-w-4xl mx-auto">
-       <div class="tab-content active" id="research-content">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-         <img alt="Scientist in a lab" class="rounded-lg shadow-lg aspect-video object-cover" src="https://images.unsplash.com/photo-1579154341097-5347f3ce636a?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
-         <div>
-          <h3 class="text-2xl font-bold text-gray-900">
-           Advancing Medical Understanding
-          </h3>
-          <p class="mt-2 text-gray-600">
-           We bridge the gap between the laboratory and the dance studio by funding novel research into the underlying biology of hypermobility in athletes, safe training methods, and effective injury prevention protocols.
-          </p>
-          <ul class="mt-4 space-y-2 text-gray-600 list-disc list-inside">
-           <li>
-            Fund grants for biomedical and clinical studies.
-           </li>
-           <li>
-            Develop a centralized database to track injury rates.
-           </li>
-           <li>
-            Establish evidence-based best practices for the dance industry.
-           </li>
-          </ul>
-         </div>
-        </div>
-       </div>
-       <div class="tab-content" id="education-content">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-         <img alt="Dance class" class="rounded-lg shadow-lg aspect-video object-cover" src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&amp;w=2835&amp;auto=format&amp;fit=crop"/>
-         <div>
-          <h3 class="text-2xl font-bold text-gray-900">
-           Empowering Through Knowledge
-          </h3>
-          <p class="mt-2 text-gray-600">
-           Knowledge is the key to prevention. We empower dancers, teachers, and parents with the information they need to promote career longevity and reduce injury rates through accessible, accredited educational programs.
-          </p>
-          <ul class="mt-4 space-y-2 text-gray-600 list-disc list-inside">
-           <li>
-            Create "Safe Stretching &amp; Hypermobility" curriculum.
-           </li>
-           <li>
-            Host workshops at competitions and conventions.
-           </li>
-           <li>
-            Develop online resources on nutrition and conditioning.
-           </li>
-          </ul>
-         </div>
-        </div>
-       </div>
-       <div class="tab-content" id="community-content">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-         <img alt="Group of people in a support meeting" class="rounded-lg shadow-lg aspect-video object-cover" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
-         <div>
-          <h3 class="text-2xl font-bold text-gray-900">
-           Providing Tangible Support
-          </h3>
-          <p class="mt-2 text-gray-600">
-           No dancer should feel isolated. We provide direct services to improve access to quality care, provide financial assistance, and foster a strong sense of community for dancers who often feel misunderstood.
-          </p>
-          <ul class="mt-4 space-y-2 text-gray-600 list-disc list-inside">
-           <li>
-            Establish scholarship funds for medical and training costs.
-           </li>
-           <li>
-            Build a national network of vetted medical professionals.
-           </li>
-           <li>
-            Offer advocacy services for accommodations.
-           </li>
-          </ul>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Leadership Section -->
-   <section class="bg-white py-20 sm:py-28" id="leadership">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+</div>
+</div>
+</div>
+<div>
+<div class="chart-container">
+<canvas id="prevalenceChart">
+</canvas>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution & Strategy Section -->
+<!-- Leadership Section -->
+<section class="bg-white py-20 sm:py-28" id="leadership">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
        Our Founding Leadership
       </h2>
-      <p class="mt-4 text-lg text-gray-600">
+<p class="mt-4 text-lg text-gray-600">
        Our foundation's strength lies in its leadership—a unique fusion of world-class expertise from science, medicine, education, and professional dance, all united by a common mission.
       </p>
-     </div>
-     <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Logan Beharry -->
-      <div class="text-center">
-       <img alt="Logan Beharry" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
-       <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+</div>
+<div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Logan Beharry -->
+<div class="text-center">
+<img alt="Logan Beharry" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1580894908361-967195033215?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
+<h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         Logan Beharry
        </h3>
-       <p class="text-sm leading-6 text-[#A96E7A]">
+<p class="text-sm leading-6 text-[#A96E7A]">
         Founder &amp; Chief Science Officer
        </p>
-       <p class="text-xs mt-2 text-gray-500">
+<p class="text-xs mt-2 text-gray-500">
         A Caltech developmental biology researcher with EDS, Logan provides the scientific vision for the foundation.
        </p>
-      </div>
-      <!-- Tabiha Tate -->
-      <div class="text-center">
-       <img alt="Tabiha Tate" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
-       <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+</div>
+<!-- Tabiha Tate -->
+<div class="text-center">
+<img alt="Tabiha Tate" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
+<h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         Tabiha Tate
        </h3>
-       <p class="text-sm leading-6 text-[#A96E7A]">
+<p class="text-sm leading-6 text-[#A96E7A]">
         Director of Studio &amp; Community Outreach
        </p>
-       <p class="text-xs mt-2 text-gray-500">
+<p class="text-xs mt-2 text-gray-500">
         Owner of the TATE Academy, Tabiha brings invaluable insight into the competitive dance world.
        </p>
-      </div>
-      <!-- Dr. Leobevitch -->
-      <div class="text-center">
-       <img alt="Dr. Leobevitch" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1622253692010-33352da603d5?q=80&amp;w=2864&amp;auto=format&amp;fit=crop"/>
-       <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+</div>
+<!-- Dr. Leobevitch -->
+<div class="text-center">
+<img alt="Dr. Leobevitch" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1622253692010-33352da603d5?q=80&amp;w=2864&amp;auto=format&amp;fit=crop"/>
+<h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         Dr. S. Leobevitch
        </h3>
-       <p class="text-sm leading-6 text-[#A96E7A]">
+<p class="text-sm leading-6 text-[#A96E7A]">
         Medical Director
        </p>
-       <p class="text-xs mt-2 text-gray-500">
+<p class="text-xs mt-2 text-gray-500">
         A distinguished physician at Weill Cornell Medicine, Dr. Leobevitch oversees our medical network and programs.
        </p>
-      </div>
-      <!-- Stacy Beharry -->
-      <div class="text-center">
-       <img alt="Stacy Beharry" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
-       <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+</div>
+<!-- Stacy Beharry -->
+<div class="text-center">
+<img alt="Stacy Beharry" class="mx-auto h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"/>
+<h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
         Stacy Beharry, Ed.D.
        </h3>
-       <p class="text-sm leading-6 text-[#A96E7A]">
+<p class="text-sm leading-6 text-[#A96E7A]">
         Director of Education
        </p>
-       <p class="text-xs mt-2 text-gray-500">
+<p class="text-xs mt-2 text-gray-500">
         With a background in curriculum development at USC, Stacy spearheads our educational initiatives.
        </p>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Partner Section -->
-   <section class="py-20 sm:py-28" id="partner" style="background: url('d484686b-a903-4883-8bf1-b0b569ce5b46.png') no-repeat center center; background-size: cover;">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div>
-       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+</div>
+</div>
+</div>
+</section>
+<!-- Partner Section -->
+<section class="py-20 sm:py-28" id="partner" style="background: url('d484686b-a903-4883-8bf1-b0b569ce5b46.png') no-repeat center center; background-size: cover;">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         The Partnership Advantage
        </h2>
-       <p class="mt-4 text-lg text-gray-600">
+<p class="mt-4 text-lg text-gray-600">
         Partnering with Stretch Beyond Limits offers a unique opportunity to connect with the passionate, multi-billion dollar dance industry while making a tangible impact on the health and longevity of its artists.
        </p>
-       <dl class="mt-10 space-y-8">
-        <div>
-         <dt class="font-semibold text-gray-900">
+<dl class="mt-10 space-y-8">
+<div>
+<dt class="font-semibold text-gray-900">
           ✓ Authentic Community Engagement
          </dt>
-         <dd class="mt-1 text-gray-600">
+<dd class="mt-1 text-gray-600">
           Align your brand with a mission of health and inclusion, demonstrating a deep commitment to the well-being of the dance community.
          </dd>
-        </div>
-        <div>
-         <dt class="font-semibold text-gray-900">
+</div>
+<div>
+<dt class="font-semibold text-gray-900">
           ✓ Positive Brand Association &amp; Visibility
          </dt>
-         <dd class="mt-1 text-gray-600">
+<dd class="mt-1 text-gray-600">
           Gain unparalleled visibility across our campaigns, national events, and educational materials reaching hundreds of thousands of dancers and families.
          </dd>
-        </div>
-        <div>
-         <dt class="font-semibold text-gray-900">
+</div>
+<div>
+<dt class="font-semibold text-gray-900">
           ✓ Tax-Deductible Support
          </dt>
-         <dd class="mt-1 text-gray-600">
+<dd class="mt-1 text-gray-600">
           As a 501(c)(3) nonprofit, all sponsorships and donations are tax-deductible, providing a direct financial incentive for your support.
          </dd>
-        </div>
-       </dl>
-      </div>
-      <div class="bg-rose-50 p-8 rounded-2xl shadow-lg">
-       <h3 class="text-2xl font-bold text-center text-gray-900">
+</div>
+</dl>
+</div>
+<div class="bg-rose-50 p-8 rounded-2xl shadow-lg">
+<h3 class="text-2xl font-bold text-center text-gray-900">
         A $5.4 Billion+ Opportunity
        </h3>
-       <p class="mt-2 text-center text-gray-600">
+<p class="mt-2 text-center text-gray-600">
         The U.S. dance studio market is a vibrant ecosystem. Our fundraising model leverages this existing, passionate network for maximum impact.
        </p>
-       <div class="mt-6 flow-root">
-        <div class="-my-4 divide-y divide-rose-200">
-         <div class="flex flex-col gap-y-4 py-4 text-center">
-          <p class="text-sm leading-6 text-gray-600">
-           <span class="font-bold text-[#A96E7A]">
+<div class="mt-6 flow-root">
+<div class="-my-4 divide-y divide-rose-200">
+<div class="flex flex-col gap-y-4 py-4 text-center">
+<p class="text-sm leading-6 text-gray-600">
+<span class="font-bold text-[#A96E7A]">
             Step 1:
            </span>
            Studios nationwide compete to raise funds for the foundation.
           </p>
-         </div>
-         <div class="flex flex-col gap-y-4 py-4 text-center">
-          <p class="text-sm leading-6 text-gray-600">
-           <span class="font-bold text-[#A96E7A]">
+</div>
+<div class="flex flex-col gap-y-4 py-4 text-center">
+<p class="text-sm leading-6 text-gray-600">
+<span class="font-bold text-[#A96E7A]">
             Step 2:
            </span>
            Top-raising teams earn a spot at our national showcase.
           </p>
-         </div>
-         <div class="flex flex-col gap-y-4 py-4 text-center">
-          <p class="text-sm leading-6 text-gray-600">
-           <span class="font-bold text-[#A96E7A]">
+</div>
+<div class="flex flex-col gap-y-4 py-4 text-center">
+<p class="text-sm leading-6 text-gray-600">
+<span class="font-bold text-[#A96E7A]">
             Step 3:
            </span>
            Event is hosted with a major competition partner, providing massive exposure and community engagement.
           </p>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-   <!-- Call to Action -->
-   <section class="bg-white py-20 sm:py-28" id="contact">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-     <div class="max-w-4xl mx-auto text-center bg-[#A96E7A] text-white p-10 sm:p-16 rounded-2xl">
-      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-white py-20 sm:py-28" id="contact">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto text-center bg-[#A96E7A] text-white p-10 sm:p-16 rounded-2xl">
+<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
        Join Our Mission
       </h2>
-      <p class="mt-4 text-lg text-rose-100">
+<p class="mt-4 text-lg text-rose-100">
        The dancers in our community are hurting, and we have a clear, actionable plan to help them. We are seeking partners who share our vision and are ready to make a tangible difference. Let's work together to ensure every dancer can stretch beyond their limits, not be defined by them.
       </p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-       <a class="rounded-md bg-white px-4 py-3 text-sm font-semibold text-[#A96E7A] shadow-sm hover:bg-rose-50 transition" href="mailto:partnerships@stretchbeyond.org?subject=Partnership Inquiry">
+<div class="mt-10 flex items-center justify-center gap-x-6">
+<a class="rounded-md bg-white px-4 py-3 text-sm font-semibold text-[#A96E7A] shadow-sm hover:bg-rose-50 transition" href="mailto:partnerships@stretchbeyond.org?subject=Partnership Inquiry">
         Become a Foundational Partner
        </a>
-       <a class="text-sm font-semibold leading-6 text-white" href="mailto:info@stretchbeyond.org?subject=Learning More">
+<a class="text-sm font-semibold leading-6 text-white" href="mailto:info@stretchbeyond.org?subject=Learning More">
         Contact Us
         <span aria-hidden="true">
          →
         </span>
-       </a>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main>
-  <footer class="bg-gray-800 text-white">
-   <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-sm">
-    <p>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<section class="py-20 bg-white" id="ella-gallery"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><h2 class="text-3xl font-extrabold text-gray-900 mb-8">Ella's Performance Gallery</h2><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"><figure class="overflow-hidden rounded-lg shadow-lg"><img alt="Ella dancing" class="w-full h-auto object-cover" src="Ella_1.JPG"/></figure><figure class="overflow-hidden rounded-lg shadow-lg"><img alt="Ella dancing" class="w-full h-auto object-cover" src="Ella_2.jpeg"/></figure><figure class="overflow-hidden rounded-lg shadow-lg"><img alt="Ella dancing" class="w-full h-auto object-cover" src="Ella_3.jpeg"/></figure><figure class="overflow-hidden rounded-lg shadow-lg"><img alt="Ella dancing" class="w-full h-auto object-cover" src="Ella_4.JPEG"/></figure></div></div></section><footer class="bg-gray-800 text-white">
+<div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-sm">
+<p>
      © 2025 Stretch Beyond Limits Foundation. A proposed 501(c)(3) organization.
     </p>
-    <p class="mt-2">
+<p class="mt-2">
      This is a conceptual proposal document for discussion purposes.
     </p>
-   </div>
-  </footer>
-  <script>
+</div>
+</footer>
+<script>
    document.addEventListener('DOMContentLoaded', function() {
             // Mobile Menu
             const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -640,5 +542,5 @@
             });
         });
   </script>
- </body>
+</body>
 </html>
